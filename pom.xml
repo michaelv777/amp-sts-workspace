@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>amp.framework</groupId>
+  <artifactId>amp-framework</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <name>amp-framework</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <modules>
+    <!--
+    <module>amp-jpa-entities</module>
+    <module>amp-common-api</module>
+    <module>amp-data-handler</module>
+    <module>amp-business-bean</module>
+    <module>aws-pa-client-rest</module>
+    -->
+    <module>aws-pa-client-soap</module>
+    <!--
+    <module>amp-ws-api</module>
+    <module>amp-storage-api</module>
+    <module>amp-text-processor-api</module>
+    <module>amp-fb-restfb-api</module>
+    <module>amp-fb-manager-bean</module>
+    <module>amp-youtube-api</module>
+    <module>amp-youtube-manager-bean</module>
+    <module>amp-ui-views</module>
+    -->
+    <!--
+    <module>amp-service-ear</module>
+    <module>amp-common-ear</module>
+    -->
+  </modules>
+  
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>3.3</version>
+          <configuration>
+            <source>1.8</source>
+            <target>1.8</target>
+          </configuration>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+  
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+  
+</project>
